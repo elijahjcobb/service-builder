@@ -1,7 +1,7 @@
 {
  "name": "@elijahjcobb/service-builder",
  "version": "0.0.1",
- "description": "",
+ "description": "A helpful cli for creating linux systemctl service files.",
  "main": "dist/index",
  "types": "dist/index",
  "scripts": {
@@ -18,7 +18,12 @@
  "publishConfig": {
   "access": "public"
  },
- "keywords": [],
+ "keywords": [
+  "systemctl",
+  "linux",
+  "service",
+  "cli"
+ ],
  "author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
  "license": "MIT",
  "bugs": {
@@ -29,7 +34,8 @@
  "devDependencies": {
   "@types/node": "latest",
   "typescript": "latest",
-  "tslint": "latest"
+  "tslint": "latest",
+  "@types/minimist": "latest"
  },
  "files": [
   "dist"

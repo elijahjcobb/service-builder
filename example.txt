@@ -1,0 +1,13 @@
+[Unit]
+Description=The Backend for subscribeto.co.
+After=network.target
+
+[Service]
+type=simple
+User=root
+WorkingDirectory=/root/subscribe-to-backend/dist
+ExecStart=/usr/bin/node --max-old-space-size=1000 ./index.js
+
+[Install]
+WantedBy=multi-user.target
+Alias=subscribeto
